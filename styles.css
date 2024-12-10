@@ -1,0 +1,124 @@
+body {
+  margin: auto;
+  font-family: "work-sans", sans-serif;
+  h1 {
+    font-family: "Amatic sc";
+    color: white;
+    font-size: 50px;
+  }
+  h2 {
+    font-family: "Amatic sc";
+  }
+  h3 {
+    font-family: "work-sans", sans-serif;
+  }
+  header {
+    text-align: center;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)),
+      url(img/lyon.webp);
+    background-position: center;
+    background-size: cover;
+    padding: 60px;
+    a,
+    p {
+      color: white;
+      font-family: "Work sans" sans-serif;
+      font-size: bold;
+    }
+  }
+  main {
+    margin: 25px;
+    section {
+      display: flex;
+      justify-content: space-between;
+      .lyonnaise {
+        width: 350px;
+        height: 200px;
+      }
+    }
+    #plat {
+      flex-direction: column;
+      font-family: "Amatic sc";
+      text-align: center;
+      div.container {
+        text-align: center;
+        font-family: "work-sans", sans-serif;
+        display: flex;
+        justify-content: space-evenly;
+        .plat {
+          margin: 25px;
+          flex-direction: column;
+          text-align: center;
+          background-color: #f9f9f8;
+          border: rgba(128, 128, 128, 0.295) 1px solid;
+          box-shadow: 0px 5px 5px lightgray;
+          width: 300px;
+          padding: 25px;
+
+          img {
+            width: 250px;
+            height: 250px;
+            object-fit: cover;
+          }
+        }
+      }
+    }
+    section#restaurant {
+      flex-direction: column;
+      font-family: "Amatic sc";
+      text-align: center;
+      .container {
+        display: flex;
+        justify-content: space-evenly;
+        p {
+          font-family: "work-sans", sans-serif;
+        }
+        img {
+          margin-top: 10px;
+          width: 350px;
+          height: 350px;
+          object-fit: cover;
+        }
+      }
+    }
+  }
+  footer {
+    background-color: #333333;
+    display: flex;
+    flex-direction: column;
+    font-family: "work-sens", sans-serif;
+    color: white;
+    section {
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+      li {
+        list-style: none;
+      }
+      aside {
+        a {
+          text-decoration: none;
+          color: white;
+        }
+      }
+    }
+    p {
+      text-align: center;
+      background-color: #222222;
+      padding: 10px;
+    }
+  }
+}
+@media screen and (max-width: 768px) {
+  div.container {
+    flex-direction: column;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  section {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+}
